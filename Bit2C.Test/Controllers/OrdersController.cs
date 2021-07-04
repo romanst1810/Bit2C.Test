@@ -20,7 +20,7 @@ namespace Bit2C.Test.Controllers
         }
 
         // GET: Orders
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> ShowOrders()
         {
             return View(await _context.Orders.Where(x=>x.UserName == User.Identity.Name).ToListAsync());
         }
@@ -61,7 +61,7 @@ namespace Bit2C.Test.Controllers
                 order.UserName = User.Identity.Name;
                 _context.Add(order);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("ShowOrders", "Orders");
             }
             return View(order);
         }
