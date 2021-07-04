@@ -429,8 +429,5 @@ D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Te
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
-D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Delete.cshtml.g.cs
-D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Details.cshtml.g.cs
-D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Edit.cshtml.g.cs
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Bit2C.Test.csproj.AssemblyReference.cache
 D:\_00 RONAN1810@GMAIL GOOGLE DRIVE BACKUP 100GB\28 Job Interview Works\Bit2C.Test\Bit2C.Test\obj\Debug\netcoreapp3.1\Razor\Views\Orders\ShowOrders.cshtml.g.cs
