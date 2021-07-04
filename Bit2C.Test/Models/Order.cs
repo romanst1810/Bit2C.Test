@@ -9,8 +9,7 @@ namespace Bit2C.Test.Models
 {
     public class Order
     {
-        [Key]
-        public int Id { get; set; }
+        [Key] public Guid Id { get; set; } = Guid.NewGuid();
         [DisplayName("User Name")]
         public string UserName { get; set; }
         [DisplayName("Amount")]

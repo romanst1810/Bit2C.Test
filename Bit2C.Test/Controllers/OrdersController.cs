@@ -26,7 +26,7 @@ namespace Bit2C.Test.Controllers
         }
 
         // GET: Orders/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace Bit2C.Test.Controllers
         // GET: Orders/Create
         public IActionResult Create()
         {
-            return View();
+            return View(new Order());
         }
 
         // POST: Orders/Create
@@ -58,6 +58,7 @@ namespace Bit2C.Test.Controllers
         {
             if (ModelState.IsValid)
             {
+                order.UserName = User.Identity.Name;
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +87,7 @@ namespace Bit2C.Test.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserName,Amount,Price,OrderType")] Order order)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,UserName,Amount,Price,OrderType")] Order order)
         {
             if (id != order.Id)
             {
@@ -117,7 +118,7 @@ namespace Bit2C.Test.Controllers
         }
 
         // GET: Orders/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -133,11 +134,11 @@ namespace Bit2C.Test.Controllers
 
             return View(order);
         }
-
+       
         // POST: Orders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var order = await _context.Orders.FindAsync(id);
             _context.Orders.Remove(order);
@@ -145,7 +146,7 @@ namespace Bit2C.Test.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool OrderExists(int id)
+        private bool OrderExists(Guid id)
         {
             return _context.Orders.Any(e => e.Id == id);
         }
